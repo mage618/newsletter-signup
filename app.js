@@ -37,7 +37,7 @@ app.post('/', (req, res) => {
 
     const options = {
         method: "POST",
-        auth: `michael1:${proccess.env.API_KEY}`
+        auth: `michael1:${process.env.API_KEY}`
     };
 
     const request = https.request(url, options, (response) => {
